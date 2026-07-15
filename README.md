@@ -58,7 +58,20 @@ npm install
 npx playwright install            # разово, ставит служебные бинарники Playwright
 npm test                          # весь набор
 npm run test:get                  # только @GET (аналогично post/put/patch/delete/options)
-npm run test:report               # открыть HTML-отчёт
+npm run test:report               # открыть встроенный HTML-отчёт Playwright
 ```
 
 Базовый адрес можно переопределить переменной окружения `API_BASE_URL`.
+
+## Отчёты Allure
+
+Подключён репортер `allure-playwright`: при каждом прогоне пишет сырые
+результаты в `allure-results/`.
+
+```bash
+npm run allure:serve              # собрать и открыть отчёт одной командой
+npm run allure:generate           # собрать статический отчёт в allure-report/
+npm run allure:open               # открыть уже собранный allure-report/
+```
+
+Для генерации отчёта нужна установленная **Java** (Allure CLI запускается на JVM).

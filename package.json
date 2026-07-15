@@ -11,7 +11,10 @@
     "test:put": "playwright test --grep @PUT",
     "test:patch": "playwright test --grep @PATCH",
     "test:delete": "playwright test --grep @DELETE",
-    "test:options": "playwright test --grep @OPTIONS"
+    "test:options": "playwright test --grep @OPTIONS",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
   },
   "repository": {
     "type": "git",
@@ -33,6 +36,8 @@
     "@faker-js/faker": "^10.5.0",
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.10.2",
     "typescript": "^6.0.3"
   }
 }
