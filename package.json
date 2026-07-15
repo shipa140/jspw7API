@@ -1,0 +1,38 @@
+{
+  "name": "pw7",
+  "version": "1.0.0",
+  "description": "API-автотесты apichallenges.eviltester.com на Playwright (паттерны Controller, Facade, Builder)",
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test",
+    "test:report": "playwright show-report",
+    "test:get": "playwright test --grep @GET",
+    "test:post": "playwright test --grep @POST",
+    "test:put": "playwright test --grep @PUT",
+    "test:patch": "playwright test --grep @PATCH",
+    "test:delete": "playwright test --grep @DELETE",
+    "test:options": "playwright test --grep @OPTIONS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shipa140/jspw7API.git"
+  },
+  "keywords": [
+    "playwright",
+    "api-testing",
+    "apichallenges",
+    "qa-automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shipa140/jspw7API/issues"
+  },
+  "homepage": "https://github.com/shipa140/jspw7API#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "typescript": "^6.0.3"
+  }
+}
